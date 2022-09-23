@@ -5,21 +5,13 @@
 */
 int num = new Random().Next(0, 10000);
 string s1 = num.ToString();
-char secondChar = s1 [2];
-var i = 0;
-if (i < s1.Length)
+
+var i = 2;
+if (s1.Length>2)
 {
-    if (i==2)
-    {
-        Console.WriteLine($"Заданное числе {num}, третья цифра заданного числа : {secondChar}");
-    }   
-    else
-    {
-        i++;
-    }
+Console.WriteLine($"Заданное числе {num}, третья цифра заданного числа : {s1[2]}");
 }
-
-    
+else
+{
 Console.WriteLine($"В заданном числе {num} третьей цифры нет");
-
-
+}
