@@ -10,7 +10,7 @@ Console.Write("N = ");
 Console.WriteLine(N);
 int S = 6;
 
-if (N >= S)
+if (N >= S && N<8)
 {
     Console.WriteLine($"Выбранный день недели {N}, является выходным");
 }
