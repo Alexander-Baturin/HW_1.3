@@ -9,8 +9,9 @@ int N = new Random().Next(1, 8);
 Console.Write("N = ");
 Console.WriteLine(N);
 int S = 6;
+int NW = 8;
 
-if (N >= S && N<8)
+if (N >= S && N < NW)
 {
     Console.WriteLine($"Выбранный день недели {N}, является выходным");
 }
