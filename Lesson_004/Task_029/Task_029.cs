@@ -1,20 +1,18 @@
 ﻿//Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 // 5 -> [1, 2, 5, 7, 19]
 // 3 -> [6, 1, 33]
+Console.Clear();
+int [] numbers = new int[8];
+Console.Write("[");
 
-int lenArray = ReadInt("Введите длинну массива: ");
+for (int i = 0; i < numbers.Length; i++)
+ {
+    numbers [i] = new Random().Next(0, 11);
+    Console.Write(" " + Method (i) + " ");
+ }
+Console.Write("]");
 
-int[] randomArray = new int[lenArray];
-for (int i = 0; i < randomArray.Length; i++)
+int Method (int a)
 {
-    randomArray[i] = new Random().Next(1,9);
-    Console.Write(randomArray[i] + " ");
-}
-
-
-// Функция ввода
-int ReadInt(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
+    return numbers[a];
 }
